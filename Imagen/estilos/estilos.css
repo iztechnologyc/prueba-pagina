@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "mifuente";
+  src: url(raya.ttf);
+}
+
+@font-face {
+  font-family: "cali";
+  src: url(cali2.TTF);
+}
+
+@font-face {
+  font-family: "bonita";
+  src: url(bonita.TTF);
+}
+
+@font-face {
+  font-family: "comica";
+  src: url(comic.ttf);
+}
+
+@font-face {
+  font-family: "letra";
+  src: url(letra.TTF);
+}
+
+#headerz,
+#footerz {
+  background: #3853ec;
+  border-radius: 5px;
+}
+
+#headerz {
+  border-bottom: 1px#455de7 solid;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+#footerz {
+  margin-top: 10px;
+  border-top: 1px #0026ff solid;
+  border-bottom: 1px #0026ff solid;
+  font-size: 12;
+  padding: 10px 10px;
+}
+
+body {
+  font-family: "comica";
+  color: white;
+  background-image: url("fondo.jpg");
+  padding: 1px;
+  /*crea un espacio entre la caja y el contenido con una sola medida para los 4 lados*/
+  /*padding: 2px 3px ;crea un espacio entre la caja y el contenido 2px arriba y abajo,3px derecha e izquierda*/
+  /* padding: 2px 3px 4px 5px;crea un espacio entre la caja y el contenido 2px arriba,3px derecha, 4px abajo , 5px izquierda*/
+}
+
+
+
+
+
+#cabeza {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: aqua solid 2px;
+  border-radius: 15px;
+  text-align: center;
+  color: blue;
+  overflow: hidden;
+  /*color para la fuente*/
+  /*atributo que crea un margen de 15px de separacion arriba y abajo y un margen automatico de la derecha e izquierdas centrando el contenido */
+  font-family: "mifuente";
+  text-shadow: rgb(255, 217, 0) -3px -3px 3px;
+}
+
+figure {
+  float: left;
+  color: #f1e0e0;
+  position: absolute;
+}
+
+.header {
+
+  margin: auto;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav li a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  clear: both;
+}
+
+.nav li a:hover {
+  background-color: grey;
+
+}
+
+.nav>li {
+  float: left;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+#nombe {
+  /*animation-name: nomb;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;*/
+  animation: nomb 1s ease-in-out 0.5s infinite normal;
+}
+
+/*@keyframes nomb{
+    0% {-moz-transform:scale(1);}
+    100% {-moz-transform:scale(1.5);}
+}*/
+
+#logo img {
+  transition: -moz-transform 0.3s ease-in-out 0.1s;
+  /*Velocidad de tranformacion*/
+  transition: -webkit-transform 0.3s ease-in-out 0.1s;
+  /*Velocidad de tranformacion*/
+}
+
+#logo img:hover {
+  transform: scale(1.2);
+  /*cambia tamaño de objetos escaladolo*/
+  transform: scale(1.2);
+  /*cambia tamaño de objetos escaladolo*/
+}
+
+#contenidops {
+  text-decoration: none;
+  text-align: left;
+  background-image: url("fondo3.jpg");
+  margin: 0;
+  color: #0026ff;
+  border-radius: 5px;
+  text-indent: 32px;
+  padding: 30px;
+}
+
+nav {
+  /*background: -moz-linear-gradient(top, blue, aqua);
+    border: rgb(0, 255, 0) solid 2px;
+    border-radius: 15px;*/
+  text-align: center;
+  text-shadow: rgb(240, 5, 5) -1px 1px 2px;
+  /*sombra en texto, color,derecha,abajo, degradado*/
+  font-family: "comica";
+  /*formato para textos, tamaño, tipo de fuente*/
+  /*box-shadow: rgb(255, 255, 255) 2px 2px 3px; sombra en caja, color,derecha,abajo, degradado*/
+  color: rgba(255, 255, 255, );
+  /*color para la fuente con transparecia con valor de 0.1 .... 1* rgba(red, green, blue, alpha)*/
+  /*outline: 2px dashed blue ; borde externo */
+  /*outline-offset: 5px; crea separacion del borde externo*/
+  margin-bottom: 15px;
+}
+
+#centron {
+  margin: 1px auto;
+}
+
+a:active {
+  color: aliceblue;
+}
+
+a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  color: rgb(228, 240, 219);
+  -webkit-color: rgb(219, 240, 240);
+}
+
+a:hover {
+  color: yellow;
+}
+
+table {
+  background-color: rgb(186, 210, 231);
+}
+
+li {
+  text-align: center;
+  display: inline-block;
+  /*coloca en linea las listas*/
+}
+
+.aum {
+  text-align: center;
+  background: -moz-linear-gradient(top, rgb(0, 153, 255), rgb(0, 4, 255));
+  display: inline-block;
+  /*coloca en linea las listas*/
+  border-radius: 5px;
+  font-size: 12pt;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  /* -moz-transition:-moz-transform 1s ease 0.5s; Velocidad de tranformacion*/
+  -moz-transition: -moz-transform 0.3s ease 0.1s;
+  transition: transform 0.3s ease 0.1s;
+}
+
+.aum:hover {
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#barra {
+  float: right;
+  height: 1200px;
+  text-align: center;
+  border: 2px solid rgb(252, 5, 5);
+  /*borde de caja, grosor, color*/
+  border-radius: 20px;
+  /*borde con curva en los 4 lados con una sola medida*/
+}
+
+blockquote {
+  -moz-transition: -moz-transform 0.3s ease 0.1s;
+  transition: transform 0.3s ease 0.1s;
+}
+
+blockquote:hover {
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#seccion {
+  /*background-color: orangered; fondo normal*/
+  border: rgb(47, 0, 255) solid 2px;
+  margin-right: 240px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+#seccionpc {
+  /*background-color: orangered; fondo normal*/
+  border: rgb(47, 0, 255) solid 2px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  /*background: -moz-linear-gradient(top, blue, aqua);degradado para mozilla lineal desde arriba color azul oscuro y azul claro*/
+  /*background: -moz-linear-gradient(bottom, blue 20%, aqua 40%);/*degradado para mozilla lineal desde abajo color azul oscuro y azul claro*/
+  /*background: -webkit-radial-gradient(center,circle, blue , aqua);degradado para chrome radial desde el centro color azul oscuro y azul claro*/
+  /*background: -ms-radial-gradient(center,ellipse, blue , aqua);degradado para internet eclipse desde el centro color azul oscuro y azul claro*/
+  /*background: -o-linear-gradient(bottom, blue, aqua);degradado para opera lineal desde abajo color azul oscuro y azul claro*/
+  /*background: -moz-linear-gradient(top, button, left, right blue, aqua);degradado para mozilla lineal desde arriba,abajo, izquierda y derecha color azul oscuro y azul claro*/
+}
+
+#contenedor {
+  width: 90%;
+  max-width: auto;
+  margin: auto;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#contenedor>div {
+  color: #eeeeee;
+  background: #eeeeee;
+}
+
+article {
+  text-align: center;
+}
+
+#volver {
+  text-align: center;
+}
+
+.boton {
+  background: -moz-linear-gradient(top, rgb(0, 153, 255), rgb(0, 4, 255));
+  display: inline-block;
+  /*coloca en linea las listas*/
+  border-radius: 5px;
+  font-size: 12pt;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
+  /* -moz-transition:-moz-transform 1s ease 0.5s; Velocidad de tranformacion*/
+  -moz-transition: -moz-transform 0.3s ease 0.1s;
+  transition: transform 0.3s ease 0.1s;
+}
+
+.boton:hover {
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*#pie {
+    border: rgb(221, 52, 179) solid 2px;
+    border-radius: 15px;
+clear: both;
+margin-top: 10px;
+}selector que permite buscar y apuntar un elemento con atributo name y cambiar caracteristicas
+
+p[name="elemento a buscar"]{
+    color: blue;
+
+    ejemplo: <p name="busqueda"> primero </p>
+             <p name="busqueda"> Segundo </p>
+}
+*/
+
+/*selector acento circuncejo que permite buscar y apuntar un elemento  que empiece con unas letras especificas letras en el atributo name y cambiar caracteristicas
+
+p[name^="elemento a buscar"]{
+    color: blue;
+
+    ejemplo: <p name="busqueda"> primero </p>
+             <p name="busqueda"> Segundo </p>
+}
+*/
+
+/*selector dolar que permite buscar y apuntar un elemento  que terminen con unas letras letras especificas en el atributo name y cambiar caracteristicas
+
+p[name$="elemento a buscar"]{
+    color: blue;
+
+    ejemplo: <p name="busqueda"> primero </p>
+             <p name="busqueda"> Segundo </p>
+}
+*/
+
+/*selector aterisco que permite buscar y apuntar un elemento  que contengan letras especificas en el atributo name y cambiar caracteristicas
+
+p[name*="elemento a buscar"]{
+    color: blue;
+
+    ejemplo: <p name="busqueda"> primero </p>
+             <p name="busqueda"> Segundo </p>
+}
+*/

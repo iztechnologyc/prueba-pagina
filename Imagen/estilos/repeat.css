@@ -1,0 +1,12 @@
+#contenedor {
+	display: grid;/*activa la opcion gred*/
+	grid-gap: 5px;/*grosor de espacio*/
+	
+	/*grid-template-columns: col1 col2 col.. ;para crear columnas col van medidas
+	grid-template-rows: f1 f2 f..; para colocar las filas en f van medidas    pixeles o fracions 1fr  se usa para ajustar la columna al cuadro                    */
+	
+	grid-template-columns: repeat(7, auto);
+	grid-template-rows: repeat(23, 192px);
+	
+}/* grid-template-columns: minmax(128px, 256px); esta coloca un minimo en columna de ancho de 128px y el maximo de 256
+	grid-template-rows: minmax(128px, 156px o auto); esta coloca un minimo enla fila  de alto de 128px y el maximo de 256 o el auto para tamaño completo para del contenido */
